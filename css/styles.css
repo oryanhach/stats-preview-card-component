@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+body {
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+	background-color: hsl(233, 46%, 7%);
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.stats-card {
+	width: 1110px;
+	height: 446px;
+	display: flex;
+	background-color: hsl(246, 38%, 16%);
+	border-radius: 8px;
+}
+
+.stats-card__content {
+	padding: 80px 110px 80px 75px;
+}
+
+.stats-card__header {
+	font-size: 23px;
+	letter-spacing: 1px;
+	margin-bottom: 35px;
+	color: hsl(0, 0%, 100%);
+}
+
+.stats-card__header span {
+	color: hsl(277, 56%, 60%);
+}
+
+.stats-card__info {
+	color: hsla(0, 0%, 100%, 0.75);
+	text-align: left;
+	line-height: 29px;
+	width: 95%;
+	margin-bottom: 60px;
+}
+
+.stats-card__stats {
+	display: flex;
+	justify-content: space-between;
+	margin-right: 80px;
+}
+
+.stats-card__stat {
+	transition: all 0.2s;
+}
+
+.stats-card__stat:hover {
+	cursor: pointer;
+	transform: scale(1.2) translateY(-0.2rem);
+}
+
+.stats-card__stat:hover .stats-card__stat-number {
+	color: hsl(277, 100%, 66%);
+}
+
+.stats-card__stat:hover .stats-card__stat-title {
+	color: hsl(0, 100%, 97%);
+}
+
+.stats-card__stat-number {
+	font-size: 23px;
+	letter-spacing: 0.5px;
+	color: hsl(0, 0%, 100%);
+	font-weight: 600;
+}
+
+.stats-card__stat-title {
+	color: hsla(0, 0%, 100%, 0.75);
+}
+
+.stats-card__image-container {
+	background-image: linear-gradient(
+			rgba(110, 23, 163, 0.5),
+			rgba(110, 23, 163, 0.5)
+		),
+		url('../images/image-header-desktop.jpg');
+
+	height: 100%;
+	width: 100%;
+}
