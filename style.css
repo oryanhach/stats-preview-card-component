@@ -175,6 +175,11 @@ body {
 }
 
 @media (min-width: 768px) {
+	body {
+		/* padding: 10rem 5rem; */
+		height: 100vh;
+	}
+
 	.card {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
